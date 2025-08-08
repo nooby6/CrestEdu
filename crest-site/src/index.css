@@ -1,16 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-html, body, #root {
-  height: 100%;
-}
-
-/* small helper styles used in the component */
-.container {
-  @apply max-w-6xl mx-auto px-6;
-}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
