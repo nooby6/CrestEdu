@@ -7,7 +7,7 @@ export default function App() {
       <header className="bg-white shadow-sm">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <img src="/src/assets/logo.svg" alt="Crest Education logo" className="w-10 h-10" />
+            <img src="/src/assets/CREST LOGO.png" alt="Crest Education logo" className="w-10 h-10" />
             <div>
               <h1 className="font-extrabold text-xl">Crest Education</h1>
               <p className="text-sm text-gray-500">Learning that lifts you higher</p>
