@@ -1,6 +1,3 @@
-// Crest Education Center — React + Tailwind v4 version
-// Assumes Tailwind v4 with @import "tailwindcss" in index.css
-
 import React from 'react';
 
 export default function App() {
