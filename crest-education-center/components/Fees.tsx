@@ -243,7 +243,7 @@ export function Fees() {
               Ready to Start Your Learning Journey?
             </h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join hundreds of satisfied families who have chosen Crest
+              Join hundreds of satisfied families who have chosen CREST
               Education Center for their children's academic success.
             </p>
             <Button
