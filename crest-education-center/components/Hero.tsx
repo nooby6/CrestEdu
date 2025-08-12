@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "./ui/button";
 import { CheckCircle, Users, Clock, Award } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -69,7 +71,7 @@ export function Hero() {
           <div className="lg:pr-80 xl:pr-96">
             <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Empowering students through personalized homeschooling, expert tuition, and flexible online classes. 
-              Join our learning community where every child&apos;s potential is unlocked through innovative teaching methods 
+              Join our learning community where every child's potential is unlocked through innovative teaching methods 
               and dedicated support.
             </p>
 
