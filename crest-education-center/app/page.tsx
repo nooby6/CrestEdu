@@ -8,6 +8,7 @@ import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { ThemeProvider } from "../components/ThemeProvider";
 import { Toaster } from "../components/ui/sonner";
+import "../app/globals.css";
 
 export default function App() {
   return (
