@@ -2,7 +2,7 @@ import '../app/globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'CREST Education Center',
+  title: 'CREST Education ',
   description: 'Website for CREST Education Center',
 };
 
