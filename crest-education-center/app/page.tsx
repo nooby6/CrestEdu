@@ -1,13 +1,13 @@
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
-import { About } from "./components/About";
-import { Fees } from "./components/Fees";
-import { Gallery } from "./components/Gallery";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { ThemeProvider } from "./components/ThemeProvider";
-import { Toaster } from "./components/ui/sonner";
+import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
+import { Services } from "../components/Services";
+import { About } from "../components/About";
+import { Fees } from "../components/Fees";
+import { Gallery } from "../components/Gallery";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
+import { ThemeProvider } from "../components/ThemeProvider";
+import { Toaster } from "../components/ui/sonner";
 
 export default function App() {
   return (
