@@ -1,5 +1,3 @@
-'use client';
-
 import { Card, CardContent } from "./ui/card";
 import { Heart, Target, Eye, Award, Users, BookOpen } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -45,10 +43,10 @@ export function About() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About CREST Education Center
+            About Crest Education Center
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Established with a vision to provide quality education that adapts to each child&#39;s unique learning style and pace.
+            Established with a vision to provide quality education that adapts to each child's unique learning style and pace.
           </p>
         </div>
 
