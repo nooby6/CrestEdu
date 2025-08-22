@@ -1,5 +1,3 @@
-"use client";
-
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -85,17 +83,14 @@ export function Fees() {
   ];
 
   const scrollToContact = () => {
-    const element = document.querySelector("#contact");
+    const element = document.querySelector('#contact');
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section
-      id="fees"
-      className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900"
-    >
+    <section id="fees" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -103,61 +98,40 @@ export function Fees() {
             Fees & Enrollment
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Transparent pricing with flexible payment options. Invest in your
-            child's education with our comprehensive learning programs designed
-            for Kenyan families.
+            Transparent pricing with flexible payment options. Invest in your child's education with our comprehensive learning programs designed for Kenyan families.
           </p>
         </div>
 
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {pricingPlans.map((plan, index) => (
-            <Card
-              key={index}
-              className={`relative border-0 shadow-lg hover:shadow-xl transition-all duration-300 dark:bg-gray-800 dark:shadow-gray-900/20 ${
-                plan.popular ? "ring-2 ring-green-500 scale-105" : ""
-              }`}
-            >
+            <Card key={index} className={`relative border-0 shadow-lg hover:shadow-xl transition-all duration-300 dark:bg-gray-800 dark:shadow-gray-900/20 ${plan.popular ? 'ring-2 ring-green-500 scale-105' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-green-500 text-white px-4 py-1">
-                    Most Popular
-                  </Badge>
+                  <Badge className="bg-green-500 text-white px-4 py-1">Most Popular</Badge>
                 </div>
               )}
               <CardHeader className="text-center pb-4">
-                <div
-                  className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${plan.color} flex items-center justify-center`}
-                >
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${plan.color} flex items-center justify-center`}>
                   <plan.icon className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl mb-2 dark:text-white">
-                  {plan.name}
-                </CardTitle>
+                <CardTitle className="text-xl mb-2 dark:text-white">{plan.name}</CardTitle>
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">
                   {plan.price}
-                  <span className="text-sm text-gray-600 dark:text-gray-400 font-normal">
-                    {" "}
-                    {plan.period}
-                  </span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400 font-normal"> {plan.period}</span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {plan.description}
-                </p>
+                <p className="text-gray-600 dark:text-gray-300">{plan.description}</p>
               </CardHeader>
               <CardContent className="pt-0">
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
-                    <li
-                      key={featureIndex}
-                      className="flex items-center text-sm text-gray-600 dark:text-gray-300"
-                    >
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
                       <Check className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <Button
+                <Button 
                   className={`w-full bg-gradient-to-r ${plan.color} hover:opacity-90`}
                   onClick={scrollToContact}
                 >
@@ -175,43 +149,29 @@ export function Fees() {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Banknote className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                Flexible Payment
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Monthly, quarterly, or annual payment options available
-              </p>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Flexible Payment</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Monthly, quarterly, or annual payment options available</p>
             </div>
             <div>
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                No Setup Fees
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Start immediately with no hidden costs or registration fees
-              </p>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">No Setup Fees</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Start immediately with no hidden costs or registration fees</p>
             </div>
             <div>
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                Sibling Discounts
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                15% discount for second child, 25% for third child onwards
-              </p>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Sibling Discounts</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">15% discount for second child, 25% for third child onwards</p>
             </div>
           </div>
         </div>
 
         {/* Enrollment Process */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-12">
-            Simple Enrollment Process
-          </h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-12">Simple Enrollment Process</h3>
           <div className="grid md:grid-cols-4 gap-8">
             {enrollmentSteps.map((step, index) => (
               <div key={index} className="text-center">
@@ -220,17 +180,11 @@ export function Fees() {
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-sm font-bold text-blue-600">
-                      {step.step}
-                    </span>
+                    <span className="text-sm font-bold text-blue-600">{step.step}</span>
                   </div>
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                  {step.title}
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  {step.description}
-                </p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{step.title}</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">{step.description}</p>
               </div>
             ))}
           </div>
@@ -239,14 +193,11 @@ export function Fees() {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Start Your Learning Journey?
-            </h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Learning Journey?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join hundreds of satisfied families who have chosen CREST
-              Education Center for their children's academic success.
+              Join hundreds of satisfied families who have chosen Crest Education Center for their children's academic success.
             </p>
-            <Button
+            <Button 
               size="lg"
               variant="secondary"
               onClick={scrollToContact}

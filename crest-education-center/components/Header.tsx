@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
@@ -32,7 +30,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">CREST EDUCATION CENTER</span>
+              <span className="text-white font-bold text-lg">C</span>
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">Crest Education</h1>
