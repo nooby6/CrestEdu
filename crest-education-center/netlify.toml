@@ -9,3 +9,11 @@
 # This ensures Next.js works properly on Netlify
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[build]
+  base = "crest-education-center"
+  command = "npm install --force && npm run build"
+  publish = ".next"
+
+[functions]
+  directory = "netlify/functions"
