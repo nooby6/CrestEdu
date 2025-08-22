@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from "./ui/button";
 import { CheckCircle, Users, Clock, Award } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";

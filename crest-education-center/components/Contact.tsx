@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from "react";
 import {
   Card,
@@ -191,8 +189,7 @@ export function Contact() {
                   Send us a Message
                 </CardTitle>
                 <p className="text-gray-600">
-                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  Fill out the form below and we&apos;ll get back to
+                  Fill out the form below and we'll get back to
                   you as soon as possible.
                 </p>
               </CardHeader>
