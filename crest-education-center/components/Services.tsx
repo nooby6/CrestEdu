@@ -1,3 +1,5 @@
+'use client'
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { BookOpen, Users, Monitor, GraduationCap, Clock, Target } from "lucide-react";

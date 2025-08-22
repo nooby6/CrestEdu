@@ -1,3 +1,5 @@
+'use client'
+
 import { Card, CardContent } from "./ui/card";
 import { Heart, Target, Eye, Award, Users, BookOpen } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";

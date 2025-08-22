@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
