@@ -30,7 +30,7 @@ export function Gallery() {
       title: "Group Project Work",
     },
     {
-      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&h=600&fit=crop",
+      src: "https://unsplash.com/photos/man-in-black-shirt-using-computer-sEgodrJdMGw",
       alt: "Online learning setup",
       category: "Online",
       title: "Virtual Learning Environment",
