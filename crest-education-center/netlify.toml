@@ -1,11 +1,11 @@
 [build]
-  base    = "crest-education-center"
-  command = "npm install --force && npm run build"
+  command = "npm run build"
   publish = ".next"
   functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+  TAILWIND_DISABLE_OXIDE = "1"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
